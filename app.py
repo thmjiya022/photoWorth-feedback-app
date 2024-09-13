@@ -9,7 +9,9 @@ def index():
 @app.route('/submit', methods=['POST'])
 def submit():
     if request.method == "POST":
-        customer = request.form['customer']
+        post_experience = request.form["post_experience"]
+        like_system = request.form['like_system']
+        favorite_feature = request.form["favorite_feature"]
 
 if __name__ == '__main__':
     app.debug = True
